@@ -16,7 +16,7 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title><?php echo esc_html( get_the_title() );?></title>
-    <link rel="canonical" href="<?php the_field('non_amp_url');?>" />
+    <link rel="canonical" href="<?php the_field('canonical_url');?>" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
@@ -44,13 +44,43 @@
     </noscript>
   </head>
   <body class="wpamp-main">
-    <nav class="wpamp-nav">
-      <ul class="wpamp-nav__list">
-        <li class="wpamp-nav__list-item">Testing</li>
-        <li class="wpamp-nav__list-item">Testing</li>
-        <li class="wpamp-nav__list-item">Testing</li>
-      </ul>
-    </nav>
-    <h1>Welcome to the mobile web</h1>
+    <header>
+      <div class="wpamp-logo">
+        <amp-img src="<?php the_field('image_logo');?>" width="200" height="45"></amp-img>
+      </div>
+      <nav class="wpamp-nav">
+        <ul class="wpamp-nav__list">
+          <li class="wpamp-nav__list-item">Testing</li>
+          <li class="wpamp-nav__list-item">Testing</li>
+          <li class="wpamp-nav__list-item">Testing</li>
+        </ul>
+      </nav>
+    </header>
+    <article class="wpamp-article">
+      <h1 class="article_heading"><?php the_field('article_title');?>
+      <section class="wpamp-section">
+        <?php the_field('section_1');?>
+      </section>
+
+      <?php if( get_field('section_2') ): ?>
+        <section class="wpamp-section">
+          <?php the_field('section_2');?>
+        </section>
+       <?php endif; ?>
+
+       <?php if( get_field('section_3') ): ?>
+         <section class="wpamp-section">
+           <?php the_field('section_3');?>
+         </section>
+        <?php endif; ?>
+
+        <?php if( get_field('section_4') ): ?>
+          <section class="wpamp-section">
+            <?php the_field('section_4');?>
+          </section>
+         <?php endif; ?>
+
+    </article>
+
   </body>
 </html>

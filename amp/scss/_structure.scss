@@ -1,6 +1,38 @@
 /* Main Styles */
 
-.wpamp-main{
-    background-color: $dark;
-    color: white;
+.wpamp{
+  &-main{
+    background-color: white;
+    color: $dark;
+    font-family: $bodyFont;
+
+  }
+
+  &-logo{
+    padding-top: 10px;
+    amp-img{
+      display: block;
+      margin: auto;
+    }
+  }
+
+  &-article{
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    margin: auto;
+    &__heading{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid $light;
+      border-bottom: 1px solid $light;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+  }
+  &-section{
+    &__heading{
+
+    }
+  }
 }

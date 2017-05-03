@@ -1,9 +1,13 @@
 .wpamp-nav{
+  margin-top: 25px;
   height: 80px;
   background-color: $light;
+  @include flexRowCenter(center);
   &__list{
+    padding: 0;
+    width: 100%;
     list-style: none;
-    @include flexCenter;
+    @include flexRowCenter(space-around);
     max-width: 400px;
     background-color: $light;
     &-item{
