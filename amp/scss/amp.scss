@@ -1,0 +1,19 @@
+/*
+    Amp Template SCSS
+*/
+
+/* variables */
+
+ $accentColor:#0085ba;
+ $dark:#333333;
+ $light:#afafaf;
+ $mid:#777777;
+
+$headingFont :Helvetica,Arial, sans-serif;
+$bodyFont:Helvetica,Arial, sans-serif;
+
+
+/*Files*/
+@import "_nav";
+@import "_structure";
+@import "_footer";

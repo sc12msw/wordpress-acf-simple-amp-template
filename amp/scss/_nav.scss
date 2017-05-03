@@ -1,0 +1,13 @@
+.wpamp-nav{
+  height: 80px;
+  background-color: $light;
+  &__list{
+    list-style: none;
+    @include flexCenter;
+    max-width: 400px;
+    background-color: $light;
+    &-item{
+      color: $dark;
+    }
+  }
+}
