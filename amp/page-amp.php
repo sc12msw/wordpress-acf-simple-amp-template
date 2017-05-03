@@ -23,7 +23,7 @@
         "@context": "http://schema.org",
         "@type": "NewsArticle",
         "headline": "<?php the_field('article_title');?>",
-        "datePublished": "<?php echo the_date(); ?>",
+        "datePublished": "<?php the_field('date'); ?>",
         "image": [
           "<?php the_field('image_headline');?>"
         ]
