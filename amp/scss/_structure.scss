@@ -1,10 +1,28 @@
 /* Main Styles */
 
 .wpamp{
-  &-main{
+  &-body{
     background-color: white;
     color: $dark;
     font-family: $bodyFont;
+    p, h1, h2, h3{
+      line-height: 1.5rem;
+      padding:1rem;
+      margin: 0;
+    }
+  }
+  &-header{
+
+  }
+  &-container{
+    &--main{
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 960px;
+      margin: auto;
+    }
+  }
+  &-main{
 
   }
 
@@ -17,22 +35,41 @@
   }
 
   &-article{
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 1200px;
-    margin: auto;
     &__heading{
       padding-top: 10px;
       padding-bottom: 10px;
-      border-top: 1px solid $light;
       border-bottom: 1px solid $light;
       font-weight: 600;
       letter-spacing: 2px;
+      font-size: 25px;
+      color:$dark;
     }
   }
   &-section{
-    &__heading{
-
+    h2{
+      font-size: 20px;
+      color: $mid;
     }
   }
+  &-header{
+    &__image{
+      margin: auto;
+    }
+  }
+}
+
+figure>figcaption {
+    padding: .5rem 1rem;
+}
+figure{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+//Font loading classes.
+.quicksand-loaded .quicksand {
+    font-family: $bodyFont;
+  }
+.quicksand-missing,.quicksand-loading{
+  font-family: $defaultFont;
 }
