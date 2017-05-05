@@ -172,7 +172,7 @@
         <script type="application/json">
         {
           "vars": {
-            "account": "UA-90177286-4"
+            "account": "********"
           },
           "triggers": {
             "default pageview": {
